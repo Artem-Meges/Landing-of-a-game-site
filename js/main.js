@@ -10,5 +10,8 @@ $(function(){
         $('.header-inner__input').slideToggle();
     })
 
+    $('.platforms__slider').slick({
     
+    })
+
 });
