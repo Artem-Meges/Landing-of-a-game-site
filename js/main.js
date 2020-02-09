@@ -13,7 +13,7 @@ $(function(){
         $('.header-inner__input').slideToggle();
     });
 
-    $('.platforms__slider').slick({
+    $('.platforms__slider, .categories__slider').slick({
         speed: 700
     });
 
@@ -22,6 +22,6 @@ $(function(){
         slidesToShow: 1, 
         variableWidth: true,
         speed: 700
-    })
+    });
 
 });
