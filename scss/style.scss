@@ -67,6 +67,12 @@ li {
     list-style: none;
 }
 
+input {
+    -webkit-appearance: none !important;
+    -webkit-border-radius: 0px; 
+    border-radius: 0px;
+}
+
 input, 
 input::-webkit-input-placeholder, 
 textarea::-webkit-input-placeholder {
@@ -378,7 +384,11 @@ textarea::-moz-placeholder {
         &-text {
             margin-right: 20px;
         }
+        &-logos {
+            text-align: center;
+        }
     }
+
 }
 
 .categories {
@@ -533,5 +543,187 @@ textarea::-moz-placeholder {
         &:hover {
             color: #fff;
         }
+    }
+}
+
+
+// ADAPTIVE
+
+@media (max-width: 1570px) {
+
+    .header-slider__item--5 {
+        background-position: initial;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .header-slider__logo {
+        padding: 20px;
+    }
+
+    .platforms__item {
+        width: 240px;
+        &-title {
+            margin: 0; 
+        }
+        &-rating {
+            padding: 7px;
+        }
+    }
+
+    .hr {
+        width: 95%;
+    }
+
+    .categories__items {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    %inner {
+        margin: 15px 0;
+    }
+
+    .platforms {
+        &__items {
+            flex-direction: column;
+            align-items: center; 
+        }
+        &__item {
+            margin-bottom: 40px;
+            width: 319px;
+            &-rating {
+                padding: 14px;
+            }
+            &-title {
+                margin-right: 68px;
+            } 
+        }
+        &__selection {
+            display: flex;
+            flex-direction: column;
+            height: 192px;
+            &-item {
+                margin-left: 0; 
+                margin-bottom: 18px;
+            }
+            &-title {
+                margin-bottom: 27px;
+            }
+        }
+    }
+
+    .slick-prev, 
+    .slick-next {
+        top: -42px
+    }
+
+    .contacts {
+        &__socials {
+            align-self: center;
+            margin-bottom: 30px;
+        }
+        &__inner {
+            flex-direction: column;
+        }
+        &__columns {
+            align-self: center;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .categories__item--2 {
+        background-image: url(../img/categories-bg-2-fullwidth.jpg);
+        width: 730px;
+    }
+
+    .categories__item--3 {
+        background-image: url(../img/categories-bg-3-fullwidth.jpg);
+        width: 730px;
+    }
+}
+
+@media (max-width: 800px) {
+    .header-inner {
+        display: block;
+        height: 139px;
+        &__icons {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+        &__search-icon {
+            height: 18px;
+        }
+        &__logo {
+            text-align: center;
+        }
+    }
+
+    .categories__item--4 {
+        background-position: right;
+    } 
+    
+    .contacts__columns {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contacts__column--width-99 {
+        width: 99px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-slider {
+        &__logo-img {
+            width: 276px;
+        }
+        &__item--3 {
+            background-image: url(../img/header-slider-bg-3-cut.jpg);
+        }
+
+        &__item--5 {
+            background-position: initial;
+            background-image: url(../img/header-slider-bg-5-cut.jpg);
+        }
+    }
+
+    .platforms__item {
+        width: 298px;
+        &-title {
+            margin-right: 24px;           
+        }
+    }
+
+    .soon {
+        &__logo-image {
+            width: 260px;
+        }
+        &__info-text {
+            margin: 0;
+            display: block;
+            width: 303px;
+            text-align: center;
+        }
+        &__info-logos {
+            text-align: center;
+        }
+    }
+
+    .categories__item--2,
+    .categories__item--4 {
+        background-position: center;
+    }
+}
+
+@media (max-width: 360px) {
+    .categories__item--1 {
+        background-position: top;
     }
 }
